@@ -14,7 +14,7 @@ spec:
         app.kubernetes.io/name: hello-world
     spec:
       containers:
-      - image: alatui/hello-world:76bb09473cfbf64796ef869c3d697ab24ea1769a
+      - image: alatui/hello-world:2c03e2a4da48826fb8793c69dd4444d8c780f771
         imagePullPolicy: Always
         name: hello-world
         ports:
