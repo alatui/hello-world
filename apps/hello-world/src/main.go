@@ -12,5 +12,5 @@ func main() {
 }
 
 func HelloEndpoint(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "%s, %s!", os.Getenv("HELLO"), r.URL.Path[1:])
+	fmt.Fprintf(w, "%s or hello %s!", os.Getenv("HELLO"), r.URL.Path[1:])
 }
