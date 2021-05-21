@@ -14,11 +14,14 @@ spec:
         app.kubernetes.io/name: hello-world
     spec:
       containers:
-      - image: alexwhen/docker-2048
+      - image: alatui/hello-world:61c79c8aaafae80fbf7173a42e56eae027b6348e
         imagePullPolicy: Always
         name: hello-world
         ports:
         - containerPort: 80
+        env:
+        - name: HELLO
+          value: "WORLD"
 ---
 apiVersion: v1
 kind: Service

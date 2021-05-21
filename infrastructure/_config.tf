@@ -25,11 +25,6 @@ terraform {
       version = ">= 2.2.0"
     }
 
-    kubernetes-alpha = {
-      source  = "hashicorp/kubernetes"
-      version = ">= 0.4.0"
-    }
-
     helm = {
       source  = "hashicorp/helm"
       version = ">= 2.1.2"
