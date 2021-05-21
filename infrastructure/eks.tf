@@ -1,8 +1,8 @@
-module  "apollo_eks_prod" {
+module  "jupyter_eks_production" {
     source          = "../modules/eks"
     providers       = {
         aws = aws.virginia
     }
-    team            = "apollo"
+    team            = "jupyter"
     environment     = "production"
 }

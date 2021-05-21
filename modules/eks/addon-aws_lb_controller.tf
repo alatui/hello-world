@@ -1,6 +1,7 @@
 resource "aws_iam_policy" "aws_lb_controller" {
   name_prefix   =  "aws_lb_controller"
   policy        = file("${path.module}/json/AWSLoadBalancerControllerIAMPolicy.json")
+  tags = local.tags
 }
 
 resource "aws_iam_role" "aws_lb_controller" {
@@ -22,6 +23,7 @@ resource "aws_iam_role" "aws_lb_controller" {
       },
     ]
   })
+  tags = local.tags
 }
 
 resource "aws_iam_role_policy_attachment" "aws_lb_controller" {
